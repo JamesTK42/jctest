@@ -1,0 +1,74 @@
+#background {
+    background-color: rgb(54, 54, 54);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(107, 107, 107);
+}
+
+@media(orientation: portrait) {
+    h1 {
+        color: rgb(107, 107, 107)
+    }
+
+
+    .nav {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+
+    .navbut {
+        background-color: aquamarine;
+        border-radius: 50px;
+        margin: 10px;
+        text-align: center;
+
+        width: 100px;
+    }
+
+
+
+
+}
+
+@media(orientation: landscape) {
+    h1 {
+        color: rgb(107, 107, 107);
+        margin-left: 150px;
+    }
+
+    .nav {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 110px;
+        justify-content: center;
+        position: fixed;
+        padding: 10px;
+        top: 0px;
+        background-color: rgba(31, 30, 30, 0.199);
+        box-shadow: rgba(0, 0, 0, 0.568) 0px 0px 10px 0.5px;
+        margin-left: -8px;
+
+    }
+
+    .navbut {
+        background-color: aquamarine;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+
+
+
+    .navbut:hover {
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+}
